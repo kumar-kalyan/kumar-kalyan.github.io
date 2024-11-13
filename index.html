@@ -1,183 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hexy - Content & Email Marketing</title>
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Bootstrap Icons -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
-<style>
-    body {
-        background-color: #f8f9fa;
-        color: #212529;
-    }
-    .navbar {
-        background-color: #000;
-    }
-    .navbar-brand, .navbar-nav .nav-link {
-        color: #fff !important;
-    }
-    .hero {
-        background: #000;
-        color: #fff;
-        padding: 100px 20px;
-        text-align: center;
-    }
-    .hero h1 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-    }
-    .hero p {
-        font-size: 1.2rem;
-        margin-bottom: 30px;
-    }
-    .about p {
-        font-size: 1.1rem;
-        line-height: 1.6;
-    }
-    .card {
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .contact-form input,
-    .contact-form textarea {
-        border-radius: 0;
-    }
-    .contact-form button {
-        background-color: #000;
-        color: #fff;
-        border: none;
-    }
-    footer {
-        background-color: #000;
-        color: #fff;
-        padding: 30px 0;
-    }
-    .social-icons a {
-        color: #fff;
-        margin: 0 10px;
-        font-size: 1.5rem;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexy - Elevate Your Digital Presence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gray: {
+                            100: '#f3f4f6',
+                            400: '#9ca3af',
+                            500: '#6b7280',
+                        },
+                    },
+                },
+            },
+        }
+    </script>
 </head>
-<body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Hexy</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- Hero Section -->
-<section class="hero">
-    <div class="container">
-        <h1>Welcome to Hexy</h1>
-        <p>Crafting compelling content, managing newsletters, and boosting email marketing engagement for your business success.</p>
-        <button class="btn btn-light btn-lg" onclick="openCal()">Book a Call</button>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="container my-5">
-    <h2 class="text-center mb-4">About Us</h2>
-    <p class="text-center">Hexy specializes in content writing, technical documentation, newsletter management, and email marketing. Our mission is to help businesses connect with their audience through impactful, well-crafted content and efficient email strategies.</p>
-</section>
-
-<!-- Services Section -->
-<section id="services" class="container my-5">
-    <h2 class="text-center mb-4">Our Services</h2>
-    <div class="row g-4">
-        <div class="col-md-3">
-            <div class="card text-center">
-                <div class="card-body">
-                    <h5 class="card-title">Content Writing</h5>
-                    <p class="card-text">Engaging, SEO-friendly content to captivate your audience.</p>
+<body class="flex flex-col min-h-screen bg-white text-black">
+    <header class="px-4 lg:px-6 h-16 flex items-center">
+        <a href="#" class="flex items-center justify-center">
+            <span class="sr-only">Hexy</span>
+            <h1 class="text-2xl font-bold">Hexy</h1>
+        </a>
+        <nav class="ml-auto flex gap-4 sm:gap-6">
+            <a class="text-sm font-medium hover:underline underline-offset-4" href="#about">About</a>
+            <a class="text-sm font-medium hover:underline underline-offset-4" href="#services">Services</a>
+            <a class="text-sm font-medium hover:underline underline-offset-4" href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main class="flex-1">
+        <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black text-white">
+            <div class="container px-4 md:px-6 mx-auto">
+                <div class="flex flex-col items-center space-y-4 text-center">
+                    <div class="space-y-2">
+                        <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
+                            Elevate Your Digital Presence
+                        </h1>
+                        <p class="mx-auto max-w-[700px] text-gray-400 md:text-xl">
+                            Crafting compelling content and driving engagement through expert strategies.
+                        </p>
+                    </div>
+                    <a href="https://cal.com/hexy/meeting" class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-white text-black hover:bg-gray-200 h-10 py-2 px-4">
+                        Book a Meeting
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card text-center">
-                <div class="card-body">
-                    <h5 class="card-title">Technical Writing</h5>
-                    <p class="card-text">Clear and precise documentation for your products.</p>
+        </section>
+        <section id="about" class="w-full py-12 md:py-24 lg:py-32">
+            <div class="container px-4 md:px-6 mx-auto">
+                <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                    <div class="space-y-2">
+                        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Hexy</h2>
+                        <p class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                            We are experts in crafting high-quality content, managing newsletters, and driving effective email marketing
+                            campaigns. Our mission is to help businesses thrive in the digital landscape.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card text-center">
-                <div class="card-body">
-                    <h5 class="card-title">Newsletter Management</h5>
-                    <p class="card-text">Effective strategies for managing your subscribers.</p>
+        </section>
+        <section id="services" class="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+            <div class="container px-4 md:px-6 mx-auto">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">Our Services</h2>
+                <div class="grid gap-6 lg:grid-cols-2">
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-2">
+                                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <line x1="10" y1="9" x2="8" y2="9"></line>
+                                </svg>
+                                Content Writing
+                            </h3>
+                            <p class="text-sm text-muted-foreground pt-2">
+                                Engaging, SEO-friendly content creation that resonates with your audience and drives results.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-2">
+                                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <path d="M10 12a1 1 0 0 0-1 1v1a1 1 0 0 1-1 1 1 1 0 0 1 1 1v1a1 1 0 0 0 1 1"></path>
+                                    <path d="M14 18a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1 1 1 0 0 1-1-1v-1a1 1 0 0 0-1-1"></path>
+                                </svg>
+                                Technical Writing
+                            </h3>
+                            <p class="text-sm text-muted-foreground pt-2">
+                                Clear and concise technical documentation that simplifies complex concepts for your users.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-2">
+                                    <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path>
+                                    <path d="M18 14h-8"></path>
+                                    <path d="M15 18h-5"></path>
+                                    <path d="M10 6h8v4h-8V6Z"></path>
+                                </svg>
+                                Newsletter Management
+                            </h3>
+                            <p class="text-sm text-muted-foreground pt-2">
+                                Strategies for subscriber growth and engagement, keeping your audience informed and connected.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-2">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                                Email Marketing
+                            </h3>
+                            <p class="text-sm text-muted-foreground pt-2">
+                                Targeted email campaigns that boost client engagement and drive conversions for your business.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card text-center">
-                <div class="card-body">
-                    <h5 class="card-title">Email Marketing</h5>
-                    <p class="card-text">Targeted campaigns to increase engagement.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="container my-5">
-    <h2 class="text-center mb-4">Contact Us</h2>
-    <p class="text-center">Reach out to us at <a href="mailto:kumar@hexy.me">kumar@hexy.me</a> or send us a message below:</p>
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <form class="contact-form">
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Your Name" required>
-                </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Your Email" required>
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark w-100">Send Message</button>
-            </form>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="text-center">
-    <div class="social-icons">
-        <a href="#"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-twitter"></i></a>
-        <a href="#"><i class="bi bi-linkedin"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-    </div>
-    <p class="mt-3">&copy; 2024 Hexy. All rights reserved.</p>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Cal.com Embed Script -->
-<script>
-function openCal() {
-    window.open("https://cal.com/your-scheduling-link", "_blank");
-}
-</script>
-
+        </section>
+    </main>
+    <footer id="contact" class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+        <p class="text-xs text-gray-500">© 2024 Hexy. All rights reserved.</p>
+        <nav class="sm:ml-auto flex gap-4 sm:gap-6">
+            <a class="text-xs hover:underline underline-offset-4" href="mailto:kumar@hexy.me">kumar@hexy.me</a>
+            <a class="text-xs hover:underline underline-offset-4" href="#">LinkedIn</a>
+            <a class="text-xs hover:underline underline-offset-4" href="#">Twitter</a>
+        </nav>
+    </footer>
 </body>
 </html>
