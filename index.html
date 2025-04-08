@@ -44,7 +44,31 @@
                             500: '#6b7280',
                         },
                     },
+                    keyframes: {
+                        typing: {
+                            "0%": {
+                                width: "0%",
+                                visibility: "hidden"
+                            },
+                            "100%": {
+                                width: "100%"
+                            }
+                        },
+                        blink: {
+                            "50%": {
+                                borderColor: "transparent"
+                            },
+                            "100%": {
+                                borderColor: "white"
+                            }
+                        }
+                    },
+                    animation: {
+                        typing: "typing 3s steps(25) infinite alternate, blink .7s infinite"
+                    }
                 },
+
+
             },
         }
     </script>
@@ -55,8 +79,9 @@
         font-family: 'Inter', sans-serif;
     }
 </style>
+
 <body class="flex flex-col min-h-screen bg-white text-black">
-   
+
     <header class="px-4 lg:px-6 h-16 flex items-center">
         <a href="#" class="flex items-center justify-center">
             <span class="sr-only">Hexy</span>
@@ -73,8 +98,9 @@
             <div class="container px-4 md:px-6 mx-auto">
                 <div class="flex flex-col items-center space-y-4 text-center">
                     <div class="space-y-2">
-                        <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
-                            Professional Writing, Delivered with Flair
+                        <h1
+                            class="animate-typing overflow-hidden whitespace-nowrap text-5xl text-white font-bold font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
+                            Professional Branding, Delivered ...
                         </h1>
                         <p class="mx-auto max-w-[700px] text-gray-400 md:text-xl">
                             We craft words that captivate, engage, and convert. If it’s not sexy, then it’s not made by
@@ -114,7 +140,7 @@
         </section>
         <section id="services" class="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
             <div class="container px-4 md:px-6 mx-auto">
-                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">Our Services
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">What we do ?
                 </h2>
                 <div class="grid gap-6 lg:grid-cols-3">
                     <!-- copy -->
@@ -128,10 +154,10 @@
                                         d="m3 15 5.12-5.12A3 3 0 0 1 10.24 9H13a2 2 0 1 1 0 4h-2.5m4-.68 4.17-4.89a1.88 1.88 0 0 1 2.92 2.36l-4.2 5.94A3 3 0 0 1 14.96 17H9.83a2 2 0 0 0-1.42.59L7 19">
                                     </path>
                                 </svg>
-                                Copywriting
+                                Website Development
                             </h3>
                             <p class="text-sm text-muted-foreground pt-2">
-                                Persuasive words that engage, sell, and boost your brand's message.
+                                We create stunning websites that captivate and convert visitors into customers.
                             </p>
                         </div>
                     </div>
@@ -149,10 +175,10 @@
                                     <path d="M14 18a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1 1 1 0 0 1-1-1v-1a1 1 0 0 0-1-1">
                                     </path>
                                 </svg>
-                                Technical Writing
+                                Chat Bot Development
                             </h3>
                             <p class="text-sm text-muted-foreground pt-2">
-                                Clear, concise documentation for complex products and services.
+                                We develop chatbots that enhance customer engagement and streamline communication.
                             </p>
                         </div>
                     </div>
@@ -171,7 +197,7 @@
                                 Ghostwriting
                             </h3>
                             <p class="text-sm text-muted-foreground pt-2">
-                                Professional writing that reflects your voice and expertise.
+                                We provide professional writing that reflects your voice and expertise.
                             </p>
                         </div>
                     </div>
@@ -193,7 +219,7 @@
                                 Custom Hooks Creation
                             </h3>
                             <p class="text-sm text-muted-foreground pt-2">
-                                Custom hooks design to attract more customers.
+                                We create custom hooks for your contnet which brings more engagement and conversion.
                             </p>
                         </div>
                     </div>
@@ -207,10 +233,10 @@
                                     <polygon points="23 7 16 12 23 17 23 7"></polygon>
                                     <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
                                 </svg>
-                                Onboarding & Product Videos
+                                Video Editing
                             </h3>
                             <p class="text-sm text-muted-foreground pt-2">
-                                Customer Onboarding and Product Videos for launch weeks.
+                                We create stunning videos that captivate and convert visitors into customers.
                             </p>
                         </div>
                     </div>
@@ -232,10 +258,10 @@
                                     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
 
                                 </svg>
-                                UGC Influencer Management
+                                Influencer Management
                             </h3>
                             <p class="text-sm text-muted-foreground pt-2">
-                                Tailored ads designed to convert and grow your business.
+                                We manage UGC influencers to create authentic content that resonates with your audience.
                             </p>
                         </div>
                     </div>
@@ -272,7 +298,7 @@
         class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
         <p class="text-xs text-gray-500">© 2024 Hexy. All rights reserved.</p>
         <nav class="sm:ml-auto flex gap-4 sm:gap-6">
-            <a class="text-xs hover:underline underline-offset-4" href="mailto:kumar@hexy.me">kumar@hexy.me</a>
+            <a class="text-xs hover:underline underline-offset-4" href="mailto:dm@hexy.me">dm@hexy.me</a>
             <a class="text-xs hover:underline underline-offset-4"
                 href="https://www.linkedin.com/company/tryhexyme">LinkedIn</a>
             <a class="text-xs hover:underline underline-offset-4" href="https://x.com/tryhexyme">X</a>
